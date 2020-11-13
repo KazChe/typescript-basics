@@ -14,7 +14,7 @@ let colors: string[] = ['red', 'green', 'pink']
 let myNumbers: number[] = [1, 4]
 
 
-// Classes Type annotations
+// Class Type annotations
 class Car {
 
 }
@@ -25,4 +25,10 @@ let car: Car = new Car()
 let point: { x: number; y: number } = {
     x: 10,
     y: 20
+}
+
+
+//Function Annotation
+const logNumber: (i: number) => void = (i: number) => {
+    console.log(i)
 }
