@@ -24,6 +24,19 @@ const multiply = function(a: number, b: number): number {
 const logger = (message: string): void => {
     console.log(message)
 }
+// bad code but shows the intention of never
 const throwError = (message: string): never => {
     throw new Error(message)
 }
+
+//Destructuring with Annotations
+const todaysWeather = {
+    date: new Date(),
+    weather: 'sunny'
+}
+
+const logWeather = ({ date, weather }: { date: Date, weather: string} ): void => {
+    console.log(date, weather)
+}
+
+logWeather(todaysWeather)
